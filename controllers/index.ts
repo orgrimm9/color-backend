@@ -7,6 +7,7 @@ const signin = async (req: Request, res: Response) => {
   try {
     const user = await User.findOne({
       userName: req.body.userName,
+      password: req.body.password
     });
 
     if (!user) {
