@@ -30,7 +30,7 @@ app.use(cookieParser());
 
 app.use(cors({
   credentials: true,
-  origin: 'http://localhost:3000'
+  origin: ['http://localhost:3000', 'https://color-frontend-09a3c49d3670.herokuapp.com']
 }));
 
 app.post("/login", signin);
