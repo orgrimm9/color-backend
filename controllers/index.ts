@@ -34,6 +34,7 @@ const signin = async (req: Request, res: Response) => {
         path: "/",
         httpOnly: true,
         secure: process.env.NODE_ENV === "production",
+        sameSite: 'none'
       })
       .status(200)
       .send({
@@ -136,6 +137,7 @@ const updateColor = async (req: Request, res: Response) => {
         path: "/",
         httpOnly: true,
         secure: process.env.NODE_ENV === "production",
+        sameSite: 'none'
       })
       .status(200)
       .send({
